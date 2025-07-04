@@ -41,6 +41,16 @@ php artisan config:cache
 php artisan route:cache
 php artisan view:cache
 
+## 📁 Excel/CSV Export/Import
+
+This project now uses **CSV format** for task exports/imports (instead of Excel/XLSX) for better compatibility and lighter dependencies.
+
+### 🔄 Changes Made
+- Replaced `maatwebsite/excel` with native PHP CSV handling
+- Same functionality but with `.csv` files instead of `.xlsx`
+- Works without requiring PHP extensions like `ext-zip`
+
+
 # Set up queue workers for background processing
 php artisan queue:work --daemon
 Environment Variables
